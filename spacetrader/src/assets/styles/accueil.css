@@ -1,0 +1,38 @@
+/* Ajoutez ces styles à votre fichier CSS existant ou créez-en un nouveau */
+
+.page {
+    background-color: #fffbfb; /* Fond rouge foncé */
+    color: #fff; /* Couleur du texte */
+  }
+  
+  .menu {
+    background-color: #333; /* Fond gris foncé */
+  }
+  
+  .menu__link--dashboard,
+  .menu__link--vaisseaux {
+    color: #fff; /* Couleur du texte blanc */
+  }
+  
+  .dashboard {
+    background-color: #444; /* Autre fond gris foncé */
+  }
+  
+  .dashboard__divs {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .dashboard__ships--ship {
+    background-color: #555; /* Fond gris légèrement plus clair */
+  }
+  
+  .dashboard__ships--shipinfo {
+    color: #fff; /* Couleur du texte blanc */
+  }
+  
+  .dashboard__cargo {
+    background-color: #555; /* Fond gris légèrement plus clair */
+    color: #fff; /* Couleur du texte blanc */
+  }
+  
