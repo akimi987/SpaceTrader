@@ -1,38 +1,88 @@
-/* Ajoutez ces styles à votre fichier CSS existant ou créez-en un nouveau */
+body {
+    background-color: #727779;
+    margin: 0;
+    padding: 0; 
+  }
+  
 
-.page {
-    background-color: #fffbfb; /* Fond rouge foncé */
-    color: #fff; /* Couleur du texte */
+.dashboard-section {
+    text-align: center;
   }
   
-  .menu {
-    background-color: #333; /* Fond gris foncé */
+  .dashboard-title {
+    margin-bottom: 20px;
   }
   
-  .menu__link--dashboard,
-  .menu__link--vaisseaux {
-    color: #fff; /* Couleur du texte blanc */
-  }
-  
-  .dashboard {
-    background-color: #444; /* Autre fond gris foncé */
-  }
-  
-  .dashboard__divs {
+  .dashboard-content {
     display: flex;
     justify-content: space-between;
   }
   
-  .dashboard__ships--ship {
-    background-color: #555; /* Fond gris légèrement plus clair */
+  .dashboard-ships {
+    background-color: #FFA07A;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    height: 280px;
+    overflow-y: auto;
   }
   
-  .dashboard__ships--shipinfo {
-    color: #fff; /* Couleur du texte blanc */
+  .dashboard-ship {
+    background-color: #F08080;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
   }
   
-  .dashboard__cargo {
-    background-color: #555; /* Fond gris légèrement plus clair */
-    color: #fff; /* Couleur du texte blanc */
+  .dashboard-ship-info {
+    margin-right: 10px;
+  }
+  
+  .ship-symbol {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .ship-details-link {
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+  }
+
+
+  
+  .dashboard-logout,
+  .dashboard-money,
+  .dashboard-cargo {
+    background-color: #FFD700;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .dashboard-logout {
+    float: left;
+  }
+
+  .dashboard-ships {
+    overflow-y: auto;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
   }
   

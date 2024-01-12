@@ -1,3 +1,3 @@
-const Url = "https://api.spacetraders.io/v2";
+const Url = "https://api.spacetraders.io";
 
 export default Url;

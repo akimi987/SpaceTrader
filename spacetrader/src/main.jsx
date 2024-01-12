@@ -1,54 +1,25 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Root, {
-  loader as rootLoader,
-  action as rootAction,
-} from "./pages/root";
-import Index from "./pages/Connexion";
-import ErrorPage from "./kmdv/error";
+import { BrowserRouter, createBrowserRouter, Route, RouterProvider, Routes } from "react-router-dom";
 import "./index.css";
+import connexion from "./pages/Connexion";
 import Buy from "./pages/achat";
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/Accueil";
 import Vaisseaux from "./pages/Vaissaux";
-import Vaisseau from "./pages/VaissauModel";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-    errorElement: <ErrorPage />,
-    loader: rootLoader,
-    action: rootAction,
-    children: [
-      {
-        errorElement: <ErrorPage />,
-        children: [
-          { index: true, element: <Index /> },
-          {
-            path: "dashboard",
-            element: <Dashboard />,
-          },
-          {
-            path: "vaisseaux",
-            element: <Vaisseaux />,
-          },
-          {
-            path: "vaisseau",
-            element: <Vaisseau />,
-          },
-          {
-            path: "buy",
-            element: <Buy />,
-          },
-        ],
-      },
-    ],
-  },
-]);
+import Vaisseau from "./pages/InfoVaissaux";
+import Connexion from "./pages/Connexion";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Connexion />}></Route>
+        <Route path="/dashboard" element={<Dashboard />}></Route>
+        <Route path="/vaisseaux" element={<Vaisseaux />}></Route>
+        <Route path="/vaisseau" element={<Vaisseau />}></Route>
+        <Route path="/buy" element={<Buy />}></Route>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
+
