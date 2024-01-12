@@ -9,6 +9,8 @@ import Vaisseaux from "./pages/Vaissaux";
 import Vaisseau from "./pages/InfoVaissaux";
 import Connexion from "./pages/Connexion";
 
+/*  */
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
