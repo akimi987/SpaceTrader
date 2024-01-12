@@ -1,3 +1,5 @@
+/* Said */
+
 export function DistanceDisplay({ x1, y1, x2, y2 }) {
     const calculateDistance = (x1, y1, x2, y2) => {
       const dx = x2 - x1;
