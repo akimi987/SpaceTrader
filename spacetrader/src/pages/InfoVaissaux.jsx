@@ -19,7 +19,6 @@ export default function InfoVaissaux(props = {}) {
     if (Shipsymbol) {
       const fetchData = async () => {
         try {
-          // fontion pour renvoyer les données du vaisseau
           const shipResponse = await axios.get(
             `https://api.spacetraders.io/v2/my/ships/${Shipsymbol}`,
             {

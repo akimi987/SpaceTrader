@@ -12,6 +12,7 @@ export default function AddContactForm() {
   const [shipData, setShipData] = useState(null);
 
   useEffect(() => {
+    //
     const fetchAgentData = async () => {
       try {
         const response = await axios.get(
@@ -40,6 +41,7 @@ export default function AddContactForm() {
   }, [token, setAgentData]);
 
   useEffect(() => {
+    //
     const fetchData = async () => {
       try {
         const response = await axios.get(
@@ -115,6 +117,7 @@ export default function AddContactForm() {
             <img src="/images/logo.png" /> 2024 Kadre DOGA{" "}
           </p>
         </section>
+        
         <section className="dashboard">
           <h2 className="h2__title"> Accueil</h2>
           <div className="dashboard__divs">
